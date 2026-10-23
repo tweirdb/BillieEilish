@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.titulo {
+    color: aliceblue;
+    font-family: "Bodoni moda";
+    font-size: 7vw;
+    margin: 2vw;
+    margin-top: 6vw;
+}
+
+/* Remove os estilos padrao do botao para destacar apenas a imagem */
+.player-button {
+    position: fixed;
+    z-index: 10;
+    left: 24vw; /* Posicao do botao*/
+    
+    background: none;       /* Remove fundo */
+    border: none;           /* Remove bordas */
+    padding: 0;             /* Remove espacamentos internos */
+    cursor: pointer;        /* Deixa a maozinha do mouse */
+    transition: transform 0.2s ease; /* Efeito suave ao clicar/passar o mouse */
+}
+
+/* Controla o tamanho da imagem do icone */
+.player-button img {
+    width: 2.5vw;
+    height: 5vh;
+    display: block;        /* Remove espacos indesejados abaixo da imagem */
+}
+
+/* Efeito visual ao passar o mouse por cima do botao imagem */
+.player-button:hover {
+    transform: scale(1.1); /* Da um leve zoom no icone */
+}
+
+/* Efeito quando o botao for pressionado */
+.player-button:active {
+    transform: scale(0.95);
+}
+
+.img-background-inic {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-image: url('billie-eilish-hapthever4k.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    animation: SurgirFundo 1s ease-in-out forwards;
+}
+
+@keyframes SurgirFundo {
+    from {
+        opacity: 0; /* comeca invisivel */
+    }
+    to {
+        opacity: 100%; /* termina visivel */
+    }
+}
