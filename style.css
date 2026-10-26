@@ -10,14 +10,24 @@ body {
     font-size: 7vw;
     margin: 2vw;
     margin-top: 6vw;
+    white-space: nowrap; /* Impede o texto de quebrar e ir para linha de baixo */
+    overflow: hidden; /* Esconde o que a animação ainda nao revelou */
+    border-right: 3px solid aliceblue; /* linha vertical imitando o cursor de digitação */
+    animation: 
+    digitar 3s forwards,
+    piscar 0.5s infinite alternate;
+}
+/*========== Alinhar botoes ================ */
+.controle-musica {
+    display: flex;
+    gap: 3vw; /* Espaço entre cada botão */
+    align-items: center; /* Alinha os botoes na mesma altura */
+    margin-top: 2vh; /* Empurra botoes para baixo */
+    padding-left: 18vw;
 }
 
 /* Remove os estilos padrao do botao para destacar apenas a imagem */
-.player-button {
-    position: fixed;
-    z-index: 10;
-    left: 24vw; /* Posicao do botao*/
-    
+.controle-musica button {
     background: none;       /* Remove fundo */
     border: none;           /* Remove bordas */
     padding: 0;             /* Remove espacamentos internos */
@@ -26,22 +36,11 @@ body {
 }
 
 /* Controla o tamanho da imagem do icone */
-.player-button img {
+.controle-musica img {
     width: 2.5vw;
     height: 5vh;
     display: block;        /* Remove espacos indesejados abaixo da imagem */
 }
-
-/* Efeito visual ao passar o mouse por cima do botao imagem */
-.player-button:hover {
-    transform: scale(1.1); /* Da um leve zoom no icone */
-}
-
-/* Efeito quando o botao for pressionado */
-.player-button:active {
-    transform: scale(0.95);
-}
-
 .img-background-inic {
     position: fixed;
     top: 0;
@@ -62,5 +61,25 @@ body {
     }
     to {
         opacity: 100%; /* termina visivel */
+    }
+}
+
+/* O texto aparece da esquerda para direita */
+@keyframes digitar {
+    from {
+        max-width: 0; /* Começa com largura zerada (texto escondido) +*/
+    }
+    to {
+        max-width: 46vw; /* Termina com largura maxima (texto todo revelado) */
+    }
+}
+
+/* Faz o cursor de digitação piscar */
+@keyframes piscar {
+    from {
+        border-color: transparent; /* Começa invisivel */
+    }
+    to {
+        border-color: aliceblue; /* Termina visivel */
     }
 }

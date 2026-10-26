@@ -24,14 +24,35 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+
+    <!-- =========== BACKGROUND IMAGE =========== -->
     <div class="img-background-inic"></div>
+
+    <!-- =========== TITULO ===================== -->
     <p class="titulo">
         BILLIE EILISH
     </p>
-    <button id="play-music" class="player-button" onclick="alternarMusica()">
+
+    <!-- =========== BOTOES ===================== -->
+    <div class="controle-musica">
+
+
+    <button id="voltar-music" onclick="voltarMusica()">
+        <img id="icone-voltar" src="button-voltar.png" alt="Botao Voltar musica">
+    </button>
+
+    <button id="play-music" onclick="alternarMusica()">
         <img id="icone-player" src="button-despausar.png" alt="Botao Play">
     </button>
-    <audio id="musica-fundo" src="Billie Eilish - WILDFLOWER (Official Lyric Video)(MP3_160K).mp3" loop></audio>
+
+    <button id="pular-music" onclick="pularMusica()">
+        <img id="icone-pular" src="button-pular.png" alt="Botao Pular musica">
+    </button>
+
+
+    </div>
+
+    <audio id="audio-player"></audio>
     <script src="funcionalidade.js"></script>
 </body>
 </html>
