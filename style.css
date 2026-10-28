@@ -2,20 +2,78 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
+    color: aliceblue;
 }
-
+/*========== TITULOS ====================== */
 .titulo {
     color: aliceblue;
     font-family: "Bodoni moda";
     font-size: 7vw;
-    margin: 2vw;
-    margin-top: 6vw;
+    margin-left: 2vw;
+    margin-top: 20vh;
+    margin-bottom: 0;
     white-space: nowrap; /* Impede o texto de quebrar e ir para linha de baixo */
     overflow: hidden; /* Esconde o que a animação ainda nao revelou */
-    border-right: 3px solid aliceblue; /* linha vertical imitando o cursor de digitação */
     animation: 
-    digitar 3s forwards,
-    piscar 0.5s infinite alternate;
+    digitar 3s forwards
+}
+.subtitulo {
+    color: aliceblue;
+    font-size: 1.5vw;
+    margin-left: 2vw;
+    margin-top: 0;
+    font-family: "Bodoni moda";
+    font-weight: 400;
+    letter-spacing: 0.15vw;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+    digitar 3s forwards
+}
+/*========== FIM =========================== */
+/*========== ESTILIZAR BOTOES ============== */
+#conhecer-billie {
+    background-color: rgb(177, 29, 81);
+    color: aliceblue;
+    width: 20vw;
+    height: 8vh;
+    border-radius: 2vh;
+    font-size: 1.5vw;
+    font-weight: 400;
+    font-family: "Viaoda Libre";
+    letter-spacing: 0.1vw;
+    cursor: pointer;
+    margin-left: 7vw;
+    margin-top: 12vh
+}
+/*========== FIM =========================== */
+/*========== RODAPE INFO =================== */
+.rodape-inicial {
+    display: flex;
+    flex-direction: row;
+    background-color: #040405;
+    width: 100vw;
+    height: 8vh;
+    position: fixed;
+    bottom: 0;
+    gap: 4vw;
+    padding-left: 3vw;;
+}
+.numero {
+    color:rgb(177, 29, 81);
+    font-size: 2.5vw;
+    font-family: "Viaoda Libre";
+    font-weight: 600;
+}
+.descricao {
+    color:aliceblue;
+    font-family: "Viaoda Libre";
+    font-weight: 400;
+}
+.teste {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
 }
 /*========== Alinhar botoes ================ */
 .controle-musica {
@@ -48,7 +106,7 @@ body {
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    background-image: url('billie-eilish-hapthever4k.jpg');
+    background-image: url('billie-eilish-happier-than-ever-pop-album-pop-music-pop-3840x2160-6518.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -70,16 +128,6 @@ body {
         max-width: 0; /* Começa com largura zerada (texto escondido) +*/
     }
     to {
-        max-width: 46vw; /* Termina com largura maxima (texto todo revelado) */
-    }
-}
-
-/* Faz o cursor de digitação piscar */
-@keyframes piscar {
-    from {
-        border-color: transparent; /* Começa invisivel */
-    }
-    to {
-        border-color: aliceblue; /* Termina visivel */
+        max-width: 50vw; /* Termina com largura em 50vw (texto todo revelado) */
     }
 }

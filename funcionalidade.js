@@ -57,3 +57,8 @@
     }
 
     loadSong(currentSongIndex);
+
+    function novaPagina() {
+    const url = "primeiraPagina.html";
+    window.open(url, '_blank');
+}

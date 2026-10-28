@@ -20,6 +20,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <!-- =========== VIAODA LIBRE Static ======= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Orbitron:wght@400..900&family=Viaoda+Libre&display=swap" rel="stylesheet">
     <!-- =========== CONECTAR CSS -->
     <link rel="stylesheet" href="style.css"/>
 </head>
@@ -32,26 +36,67 @@
     <p class="titulo">
         BILLIE EILISH
     </p>
-
+    <!-- =========== SUBTITULO ================== -->
+    <p class="subtitulo">
+        UMA VOZ SUAVE PARA SENTIMENTOS QUE NUNCA FORAM
+    </p>
     <!-- =========== BOTOES ===================== -->
     <div class="controle-musica">
+        <button id="voltar-music" onclick="voltarMusica()">
+            <img id="icone-voltar" src="button-voltar.png" alt="Botao Voltar musica">
+        </button>
 
+        <button id="play-music" onclick="alternarMusica()">
+            <img id="icone-player" src="button-despausar.png" alt="Botao Play">
+        </button>
 
-    <button id="voltar-music" onclick="voltarMusica()">
-        <img id="icone-voltar" src="button-voltar.png" alt="Botao Voltar musica">
-    </button>
-
-    <button id="play-music" onclick="alternarMusica()">
-        <img id="icone-player" src="button-despausar.png" alt="Botao Play">
-    </button>
-
-    <button id="pular-music" onclick="pularMusica()">
-        <img id="icone-pular" src="button-pular.png" alt="Botao Pular musica">
-    </button>
-
-
+        <button id="pular-music" onclick="pularMusica()">
+            <img id="icone-pular" src="button-pular.png" alt="Botao Pular musica">
+        </button>
     </div>
+    <!-- =========== BOTAO CONHECER ============= -->
+    <button id="conhecer-billie" onclick="novaPagina()">
+        Conhecer 🡢
+    </button>
+    <!-- =========== RODAPE ===================== -->
+    <div class="rodape-inicial">
+        <div class="teste">
+            <p class="numero">
+                +59 BI
+            </p>
+            <p class="descricao">
+                Streams no Spotify
+            </p>
+        </div>
 
+        <div class="teste">
+            <p class="numero">
+                10
+            </p>
+            <p class="descricao">
+                GRAMMYS
+            </p>
+        </div>
+
+        <div class="teste">
+            <p class="numero">
+                +4 BI
+            </p>
+            <p class="descricao">
+                Reproduções de "Birds of a Feather"
+            </p>
+        </div>
+
+        <div class="teste">
+            <p class="numero">
+                2
+            </p>
+            <p class="descricao">
+                OSCARS
+            </p>
+        </div>
+    </div>
+    <!-- FIM RODAPE -->
     <audio id="audio-player"></audio>
     <script src="funcionalidade.js"></script>
 </body>
