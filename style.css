@@ -33,7 +33,7 @@ body {
 /*========== FIM =========================== */
 /*========== ESTILIZAR BOTOES ============== */
 #conhecer-billie {
-    background-color: rgb(177, 29, 81);
+    background-color: rgb(177, 29, 49);
     color: aliceblue;
     width: 20vw;
     height: 8vh;
@@ -60,7 +60,7 @@ body {
     padding-left: 3vw;;
 }
 .numero {
-    color:rgb(177, 29, 81);
+    color:rgb(177, 29, 49);
     font-size: 2.5vw;
     font-family: "Viaoda Libre";
     font-weight: 600;
@@ -75,6 +75,7 @@ body {
     align-items: center;
     gap: 0.5vw;
 }
+/* FIM RODAPE */
 /*========== Alinhar botoes ================ */
 .controle-musica {
     display: flex;
@@ -130,4 +131,61 @@ body {
     to {
         max-width: 50vw; /* Termina com largura em 50vw (texto todo revelado) */
     }
+}
+
+/*========== NOVA PAGINA ==================== */
+/*========== PRIMEIRA PARTE ================= */
+.parent {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    gap: 3vw;
+}
+.mom {
+    display: flex;
+    flex-direction: column; /* retangulo-perfil organizado em colunas com retangulo-discos */
+    gap: 1vw; /* espaço entre eles */
+}
+.retangulo-texto {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2vh;
+    width: 60vw;
+    height: 42vh;
+    margin-left: 3vw;
+    margin-top: 3vw;
+    border:1px solid #0069da67;
+}
+
+.retangulo-perfil {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2vh;
+    width: 30vw;
+    height: 55vh;
+    margin-top: 3vw;
+    border:1px solid #0069da67;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(144, 192, 255);
+}
+
+.retangulo-discos {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2vh;
+    width: 30vw;
+    height: 40vh;
+    border:1px solid #0069da67;
+}
+.foto-perfil {
+    display: flex;
+    border-radius: 50%;
+    width: 11vw;
+    margin-bottom: 1vw;
+}
+a {
+    text-decoration: none;
+}
+p {
+    margin: 0.3vw;
 }
