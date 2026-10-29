@@ -185,6 +185,10 @@ body {
 }
 a {
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(144, 192, 255);
 }
 p {
     margin: 0.3vw;
