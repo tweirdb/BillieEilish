@@ -5,9 +5,9 @@
 
 // ========== PLAYLIST ===================== //
     const playlist = [
-        "pasta/Billie Eilish - WILDFLOWER (Official Lyric Video)(MP3_160K).mp3",
-        "pasta/Billie Eilish - CHIHIRO (Official Lyric Video)(MP3_160K).mp3",
-        "pasta/Billie Eilish_ Khalid - lovely(MP3_160K).mp3"
+        "Billie Eilish - WILDFLOWER (Official Lyric Video)(MP3_160K).mp3",
+        "Billie Eilish - CHIHIRO (Official Lyric Video)(MP3_160K).mp3",
+        "Billie Eilish_ Khalid - lovely(MP3_160K).mp3"
     ];
 // ======== FIM PLAYLIST =================== //
 
