@@ -139,7 +139,7 @@ body {
     display: flex;
     position: relative;
     flex-direction: row;
-    gap: 3vw;
+    gap: 2vw;
 }
 .mom {
     display: flex;
@@ -149,9 +149,9 @@ body {
 .retangulo-texto {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 2vh;
-    width: 60vw;
+    width: 67vw;
     height: 42vh;
-    margin-left: 3vw;
+    margin-left: 1vw;
     margin-top: 3vw;
     border:1px solid #0069da67;
 }
@@ -159,8 +159,8 @@ body {
 .retangulo-perfil {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 2vh;
-    width: 30vw;
-    height: 55vh;
+    width: 25vw;
+    height: 47vh;
     margin-top: 3vw;
     border:1px solid #0069da67;
     display: flex;
@@ -170,18 +170,39 @@ body {
     color: rgb(144, 192, 255);
 }
 
-.retangulo-discos {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 2vh;
-    width: 30vw;
-    height: 40vh;
-    border:1px solid #0069da67;
-}
 .foto-perfil {
     display: flex;
     border-radius: 50%;
     width: 11vw;
     margin-bottom: 1vw;
+}
+
+.retangulo-discos {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2vh;
+    width: 25vw;
+    height: 47vh;
+    border:1px solid #0069da67;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cria 2 colunas iguais */
+    gap: 0;
+    align-items: center;
+    justify-items: center;
+}
+
+.disco-img {
+    width: 10vw;
+}
+
+.navbar {
+    background-color: rgba(0, 255, 255, 0.24);
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+
 }
 a {
     text-decoration: none;
@@ -190,6 +211,7 @@ a {
     align-items: center;
     color: rgb(144, 192, 255);
 }
+
 p {
     margin: 0.3vw;
 }
