@@ -29,17 +29,16 @@
 </head>
 <body>
     <!-- ========== BARRA DE NAVEGAÇÃO ========== -->
-    <div class="navbar">
         <nav>
-            <a style="color: white;" href="#inicio">Inicio da Vida</a>
-            <a style="color: white;" href="#carreira">Carreira</a>
-            <a style="color: white;" href="#premios">Premios e Indicações</a>
-            <a style="color: white;" href="#produtos">Produtos</a>
+            <ul class="navbar">
+            <li><a href="#inicio">Inicio da Vida</a></li>
+            <li><a href="#carreira">&emsp;Carreira</a></li>
+            <li><a href="#premios">&emsp;Premios e Indicações</a></li>
+            <li><a href="#produtos">&emsp;Produtos</a></li>
+            </ul>
         </nav>
-    </header>
-    </div>
 
-    <img style="width: 99.24vw; position: absolute;" src="hit-me-hard-and-soft.jpg">
+    <img style="width: 100vw; position: absolute;" src="hit-me-hard-and-soft.jpg">
 
     <div class="parent">
         <div class="retangulo-texto">
@@ -64,12 +63,106 @@
             </div>
 
             <div class="retangulo-discos">
-                <img class="disco-img" src="dont-smile-disco.png" alt="dont smile at me Album">
-                <img class="disco-img" src="happier-than-ever-disco.png" alt="Happier Than Ever Album">
-                <img class="disco-img" src="hit-me-disco.png" alt="HIT ME HARD AND SOFT Album">
-                <img class="disco-img" src="when-we-disco.png" alt="WHEN WE ALL FALL ASLEEP, WHERE DO WE GO? Album">
+                <div class="album-container">
+                    <img
+                    class="disco-img" 
+                    src="dont-smile-disco.png" 
+                    alt="dont smile at me Album"
+                    onclick="playPlaylist(0)"
+                    >
+                    <div class="lista-musicas">
+                        <h3>dont smile at me - musicas</h3>
+                        <p>01. Copycat</p>
+                        <p>02. Idontwannabeyouanymore</p>
+                        <p>03. My boy</p>
+                        <p>04. Watch</p>
+                        <p>05. Party Favor</p>
+                        <p>06. Bellyache</p>
+                        <p>07. Ocean Eyes</p>
+                        <p>08. Hostage</p>
+                        <p>09. &burn</p>
+                    </div>
+                </div>
+
+                <div class="album-container">
+                    <img
+                    class="disco-img" 
+                    src="when-we-disco.png" 
+                    alt="WHEN WE ALL FALL ASLEEP, WHERE DO WE GO? Album"
+                    onclick="playPlaylist(1)"
+                    >
+                    <div class="lista-musicas">
+                        <h3>WHEN WE ALL FALL ASLEEP, WHERE DO WE GO? - musicas</h3>
+                        <p>01. bad guy</p>
+                        <p>02. bury a friend</p>
+                        <p>03. you should see me in a crown</p>
+                        <p>04. !!!!!!!</p>
+                        <p>05. all the good girls go to hell</p>
+                        <p>06. wish you were gay</p>
+                        <p>07. when the party's over</p>
+                        <p>08. 8</p>
+                        <p>09. my strange addiction</p>
+                        <p>10. listen before i go</p>
+                        <p>11. i love you</p>
+                        <p>12. goodbye</p>
+                        <p>13. ilomilo</p>
+                        <p>14. xanny</p>
+                    </div>
+                </div>
+
+                <div class="album-container">
+                    <img
+                    class="disco-img" 
+                    src="happier-than-ever-disco.png" 
+                    alt="Happier Than Ever Album"
+                    onclick="playPlaylist(2)"
+                    >
+                    <div class="lista-musicas">
+                        <h3>Happier Than Ever - musicas</h3>
+                        <p>01. getting older</p>
+                        <p>02. my future</p>
+                        <p>03. oxytocin</p>
+                        <p>04. I didn´t change my number</p>
+                        <p>05. Billie Bossa Nova</p>
+                        <p>06. GOLDWING</p>
+                        <p>07. lost cause</p>
+                        <p>08. Halley´s Comet</p>
+                        <p>09. Not my responsibility</p>
+                        <p>10. OverHeated</p>
+                        <p>11. Everybody dies</p>
+                        <p>12. Your Power</p>
+                        <p>13. NDA</p>
+                        <p>14. Therefore I Am</p>
+                        <p>15. Happier Than Ever</p>
+                        <p>16. Male Fantasy</p>
+                    </div>
+                </div>
+
+                <div class="album-container">
+                    <img
+                    class="disco-img" 
+                    src="hit-me-disco.png" 
+                    alt="HIT ME HARD AND SOFT Album"
+                    onclick="playPlaylist(3)"
+                    >
+                    <div class="lista-musicas">
+                        <h3>HIT ME HARD AND SOFT - musicas</h3>
+                        <p>01. SKINNY</p>
+                        <p>02. LUNCH</p>
+                        <p>03. CHIHIRO</p>
+                        <p>04. BIRDS OF A FEATHER</p>
+                        <p>05. WILDFLOWER</p>
+                        <p>06. THE GREATEST</p>
+                        <P>07. L´AMOUR DE MA VIE</p>
+                        <p>08. THE DINER</p>
+                        <p>09. BITTERSUITE</p>
+                        <p>10. BLUE</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <audio id="musicas"></audio>
+    <script src="funcionalidade.js"></script>
 </body>
 </html>
